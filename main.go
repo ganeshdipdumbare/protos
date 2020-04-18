@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "./proto/todo"
+	_ "github.com/ganeshdipdumbare/protos/proto/todo"
 )
 
 func main() {}
