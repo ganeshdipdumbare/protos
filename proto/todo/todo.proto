@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+service TodoService {
+  rpc Login(LoginRequest) returns (LoginResponse);
+}
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  oneof response {
+    string token = 1;
+    Error error = 2;
+  }
+}
+
+message Error {
+  string errorMessage = 1;
+  int32 errorCode = 2;
+}
