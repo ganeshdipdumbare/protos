@@ -1,4 +1,4 @@
-module protos
+module github.com/ganeshdipdumbare/protos
 
 go 1.14
 
